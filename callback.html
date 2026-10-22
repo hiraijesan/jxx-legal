@@ -1,0 +1,9 @@
+<!doctype html><meta charset="utf-8"><title>TikTok callback</title>
+<body style="font-family:monospace;background:#111;color:#0f0;padding:2em">
+<h2>TikTok authorization code:</h2>
+<div id="c" style="font-size:30px;word-break:break-all"></div>
+<script>
+var q=new URLSearchParams(location.search);
+document.getElementById('c').textContent=q.get('code')||'(kosong - ada error?)';
+</script>
+<p>Copy kode di atas, lalu paste ke terminal (klik kanan).</p>
